@@ -1,0 +1,143 @@
+country,raw_name,concept_family,unit_raw,unit_standard,measurement_level,collection_protocol,candidate_harmonized_name,compatibility_status,notes
+Japan,conf,NA,NA,NA,NA,remote_sensing_plus_validation,NA,NA,NA
+Japan,damage_2,damage_label,0/1,0/1,binary,remote_sensing_plus_validation,y2,direct,Use as binary external-validation target
+Japan,damage_val,NA,NA,NA,NA,remote_sensing_plus_validation,NA,NA,NA
+Japan,gsi_fire,hazard_intensity,0/1,0/1,binary,remote_sensing_plus_validation,fire_overlay,not_compatible,
+Japan,gsi_slope_failure,hazard_intensity,0/1,0/1,binary,remote_sensing_plus_validation,slope_overlay,not_compatible,
+Japan,gsi_tsunami,hazard_intensity,0/1,0/1,binary,remote_sensing_plus_validation,tsunami_overlay,not_compatible,Multi-hazard overlay specific to Noto
+Japan,municipality,NA,NA,NA,NA,remote_sensing_plus_validation,NA,NA,NA
+Japan,s_fid,NA,NA,NA,NA,remote_sensing_plus_validation,NA,NA,NA
+Japan,source,NA,NA,NA,NA,remote_sensing_plus_validation,NA,NA,NA
+Japan,usgs_mmi,hazard_intensity,MMI,MMI,interval,remote_sensing_plus_validation,mmi,not_compatible,Only macroseismic; no PGA/PGV/SA available
+Nepal,age_building,geometry,years,years,ratio,household_survey_post_reconstruction,age,direct,Year built; reconstruction-period inventory
+Nepal,condition_post_eq,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,count_floors_pre_eq,geometry,count,count,ratio,household_survey_post_reconstruction,no_stories,direct,Pre-EQ floor count
+Nepal,damage_grade,damage_label,1-5,1-5,ordinal,household_survey_post_reconstruction,y5,direct,EMS-98 ordinal
+Nepal,district_distance_to_earthquakecenter(mi),hazard_proxy,mi,km,ratio,household_survey_post_reconstruction,hazard_proxy_distance_km,convertible,Convert mi -> km via 1.60934
+Nepal,foundation_type,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,ground_floor_type,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_adobe_mud,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_bamboo,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_cement_mortar_brick,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_cement_mortar_stone,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_mud_mortar_brick,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_mud_mortar_stone,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_other,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_rc_engineered,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_rc_non_engineered,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_stone_flag,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,has_superstructure_timber,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,land_surface_condition,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,per-height_ft_pre_eq,geometry,ft,m,ratio,household_survey_post_reconstruction,total_height_m,convertible,Convert ft -> m via 0.3048
+Nepal,plinth_area_sq_ft,geometry,ft^2,m^2,ratio,household_survey_post_reconstruction,floor_area_m2,convertible,Convert ft^2 -> m^2 via 0.092903
+Nepal,position,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,roof_type(Bamboo/Timber-Heavy roof=0; Bamboo/Timber-Light roof=1; RCC/RB/RBC=2),NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,technical_solution_proposed,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,vdcmun_id,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Nepal,ward_id,NA,NA,NA,NA,household_survey_post_reconstruction,NA,NA,NA
+Türkiye,age,geometry,years,years,ratio,engineering_field_reconnaissance,age,direct,
+Türkiye,ai_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_column_area,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_concrete_wall_area_ew,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_concrete_wall_area_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_concrete_wall_area_min,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_concrete_wall_area_ns,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_masonry_wall_area_ew,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_masonry_wall_area_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_masonry_wall_area_min,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,c_f_masonry_wall_area_ns,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,captive_column_encoding,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,captive_columns_presence,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,cav_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,cd,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,column_index_percent,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,critical_aac_masonry_wall_area_ew,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,critical_aac_masonry_wall_area_ns,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,critical_damage,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,critical_damage_encoding,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,floor_area,geometry,m^2,m^2,ratio,engineering_field_reconnaissance,floor_area_m2,direct,
+Türkiye,id,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,latitude,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,longitude,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_ai,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_cav,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_pga,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_pga_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_pgv,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_pgv_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_psa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_psa0_6,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_psa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_repi,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_rrup,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_sa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_sa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_3_sa3_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_4_sa_t1,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_ai,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_cav,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_pga,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_pga_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_pgv,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_pgv_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_psa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_psa0_6,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_psa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_repi,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_rrup,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_sa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_sa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_7_sa3_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m6_8_sa_t1,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_5_pga,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_5_pgv,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_5_sa_t1,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_7_ai,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_7_cav,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_7_psa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_7_psa0_6,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_7_psa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_ai,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_cav,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_pga,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_pga_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_pga_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_pgv,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_pgv_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_pgv_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_psa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_psa0_6,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_psa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_repi,hazard_proxy,km,km,ratio,engineering_field_reconnaissance,hazard_proxy_distance_km,direct,"Epicentral distance, Pazarcık main shock"
+Türkiye,m7_8_repi_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_rrup,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_rrup_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa0_3,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa0_3_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa1_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa1_0_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa3_0,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa3_0_2,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,m7_8_sa_t1,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,masonry_wall_damage_5_class,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,masonry_wall_damage_encoding_5_class,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,min_wi_percent,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,no_stories,geometry,count,count,ratio,engineering_field_reconnaissance,no_stories,direct,
+Türkiye,no_stories_above_critical_floor_cf,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,pga_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,pgv_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,priority_index_percent,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,sa_t1_max,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,soft_story,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,soft_story_encoding,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,structural_damage_3_class,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,structural_damage_5_class,damage_label,N/L/M/S/C,1-5,ordinal,engineering_field_reconnaissance,y5,convertible,"N->1, L->2, M->3, S->4, C->5"
+Türkiye,structural_damage_encoding_3_class,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,t_1_0_0466h_0_9,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,t_1_n_10,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,total_floor_area_above_c_f,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,total_height,geometry,m,m,ratio,engineering_field_reconnaissance,total_height_m,direct,
+Türkiye,v_s30,site,m/s,m/s,ratio,engineering_field_reconnaissance,v_s30,not_compatible,Not present in Nepal/Japan
+Türkiye,wall_index_ew_percent,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,wall_index_ns_percent,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA
+Türkiye,wd,NA,NA,NA,NA,engineering_field_reconnaissance,NA,NA,NA

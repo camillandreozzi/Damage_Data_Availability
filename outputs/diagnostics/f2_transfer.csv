@@ -1,0 +1,9 @@
+metric,value,train,test,feature_set
+accuracy,0.35537190082644626,Nepal,Türkiye,F2
+auc,0.48557512176845247,Nepal,Türkiye,F2
+brier,0.4647048091394173,Nepal,Türkiye,F2
+f1,0.012658227848101266,Nepal,Türkiye,F2
+accuracy,0.41860584127417355,Türkiye,Nepal,F2
+auc,0.4215856856501351,Türkiye,Nepal,F2
+brier,0.27772183015365137,Türkiye,Nepal,F2
+f1,0.34129538585502994,Türkiye,Nepal,F2

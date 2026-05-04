@@ -1,0 +1,13 @@
+metric,value,train,test
+accuracy,0.35537190082644626,Nepal_RC_only,Türkiye
+auc,0.490520794304983,Nepal_RC_only,Türkiye
+brier,0.47637442371191446,Nepal_RC_only,Türkiye
+f1,0.012658227848101266,Nepal_RC_only,Türkiye
+accuracy,0.46920758981119637,Türkiye,Nepal_RC_only
+auc,0.43620403757276593,Türkiye,Nepal_RC_only
+brier,0.2487016847465782,Türkiye,Nepal_RC_only
+f1,0.14862364535739908,Türkiye,Nepal_RC_only
+accuracy,0.9758681577398469,Nepal_RC_only,Nepal_RC_only_holdout
+auc,0.9967292080100979,Nepal_RC_only,Nepal_RC_only_holdout
+brier,0.02250346647545748,Nepal_RC_only,Nepal_RC_only_holdout
+f1,0.9150435142975549,Nepal_RC_only,Nepal_RC_only_holdout

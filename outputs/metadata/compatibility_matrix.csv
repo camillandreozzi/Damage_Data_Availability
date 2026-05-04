@@ -1,0 +1,13 @@
+candidate_harmonized_name,Nepal,Türkiye,Japan
+age,direct,direct,not_compatible
+fire_overlay,not_compatible,not_compatible,not_compatible
+floor_area_m2,convertible,direct,not_compatible
+hazard_proxy_distance_km,convertible,direct,not_compatible
+mmi,not_compatible,not_compatible,not_compatible
+no_stories,direct,direct,not_compatible
+slope_overlay,not_compatible,not_compatible,not_compatible
+total_height_m,convertible,direct,not_compatible
+tsunami_overlay,not_compatible,not_compatible,not_compatible
+v_s30,not_compatible,not_compatible,not_compatible
+y2,not_compatible,not_compatible,direct
+y5,direct,convertible,not_compatible
