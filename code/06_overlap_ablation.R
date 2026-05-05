@@ -13,7 +13,7 @@
 #   K1: hazard_proxy_distance_km only (kept until last; survives in any data regime)
 #
 # Output:
-#   * R/outputs/results/overlap_ablation_long.rds
+#   * R/data/outputs/results/overlap_ablation_long.rds
 # =====================================================================
 
 suppressPackageStartupMessages({
@@ -25,10 +25,10 @@ suppressPackageStartupMessages({
   library(MASS)
 })
 
-source("~/Documents/Claude/Projects/Damage Data Publication/R/04_country_specific_models.R", local = TRUE)
+source("~/Documents/Claude/Projects/Damage Data Publication/R/code/04_country_specific_models.R", local = TRUE)
 
-feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/features"
-out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/results"
+feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/features"
+out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/results"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 set.seed(20260429)

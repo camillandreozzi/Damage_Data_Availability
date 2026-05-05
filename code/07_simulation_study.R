@@ -21,8 +21,8 @@
 #   * country_shift   mean shift in eta between countries
 #
 # Output:
-#   * R/outputs/sim/simulation_long.rds
-#   * R/outputs/sim/variance_decomp.csv
+#   * R/data/outputs/sim/simulation_long.rds
+#   * R/data/outputs/sim/variance_decomp.csv
 # =====================================================================
 
 suppressPackageStartupMessages({
@@ -33,9 +33,9 @@ suppressPackageStartupMessages({
   library(yardstick)
 })
 
-source("R/04_country_specific_models.R", local = TRUE)
+source("R/code/04_country_specific_models.R", local = TRUE)
 
-out_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/sim"
+out_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/sim"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 set.seed(20260430)

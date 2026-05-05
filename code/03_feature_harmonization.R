@@ -13,20 +13,20 @@
 #   * J1 = Japan reduced binary set (footprint geometry, MMI, overlays)
 #
 # Outputs:
-#   * R/outputs/features/F1_pooled.rds          (Nepal+Türkiye, F1)
-#   * R/outputs/features/F2_pooled.rds
-#   * R/outputs/features/F3_Nepal.rds
-#   * R/outputs/features/F3_Türkiye.rds
-#   * R/outputs/features/J1_Japan.rds
+#   * R/data/outputs/features/F1_pooled.rds          (Nepal+Türkiye, F1)
+#   * R/data/outputs/features/F2_pooled.rds
+#   * R/data/outputs/features/F3_Nepal.rds
+#   * R/data/outputs/features/F3_Türkiye.rds
+#   * R/data/outputs/features/J1_Japan.rds
 # =====================================================================
 
 suppressPackageStartupMessages({
   library(tidyverse)
 })
 
-raw_dir    <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/raw"
-target_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/targets"
-out_dir    <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/features"
+raw_dir    <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/raw"
+target_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/targets"
+out_dir    <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/features"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 nepal   <- readRDS(file.path(raw_dir,"nepal_raw.rds"))$data

@@ -12,7 +12,7 @@
 # All experiments run on F1 by default; F2/F3 toggled via `feature_set`.
 #
 # Output:
-#   * R/outputs/results/cross_country_transfer_long.rds
+#   * R/data/outputs/results/cross_country_transfer_long.rds
 #       columns: train_domain, test_domain, feature_set, model, task,
 #                metric, value, split_id, country_indicator
 # =====================================================================
@@ -26,11 +26,11 @@ suppressPackageStartupMessages({
   library(MASS)
 })
 
-source("~/Documents/Claude/Projects/Damage Data Publication/R/04_country_specific_models.R", local = TRUE)
+source("~/Documents/Claude/Projects/Damage Data Publication/R/code/04_country_specific_models.R", local = TRUE)
 # (re-uses fit_and_evaluate / eval_* helpers)
 
-feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/features"
-out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/results"
+feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/features"
+out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/results"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 set.seed(20260428)

@@ -15,16 +15,16 @@
 #                          not_compatible}
 #
 # Outputs:
-#   * R/outputs/metadata/variable_dictionary.csv
-#   * R/outputs/metadata/compatibility_matrix.csv  (concept × country)
+#   * R/data/outputs/metadata/variable_dictionary.csv
+#   * R/data/outputs/metadata/compatibility_matrix.csv  (concept × country)
 # =====================================================================
 
 suppressPackageStartupMessages({
   library(tidyverse)
 })
 
-raw_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/raw"
-out_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/metadata"
+raw_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/raw"
+out_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/metadata"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ---- Load raw bundles to enumerate columns --------------------------

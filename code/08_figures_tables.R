@@ -24,9 +24,9 @@ suppressPackageStartupMessages({
   library(viridis)
 })
 
-res_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/results"
-sim_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/sim"
-meta_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/metadata"
+res_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/results"
+sim_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/sim"
+meta_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/metadata"
 fig_dir <- "~/Documents/Claude/Projects/Damage Data Publication/paper/figures"
 tab_dir <- "~/Documents/Claude/Projects/Damage Data Publication/paper/tables"
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)

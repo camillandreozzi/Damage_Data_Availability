@@ -2,7 +2,7 @@
 # 00_load_raw_data.R
 # ---------------------------------------------------------------------
 # Loads raw country datasets into memory and saves canonical raw copies
-# under R/outputs/raw/.
+# under R/data/outputs/raw/.
 #
 # Inputs (configure paths below):
 #   * Nepal building-damage CSV     (post-Gorkha reconstruction inventory)
@@ -10,9 +10,9 @@
 #   * Japan Noto-peninsula GeoJSON  (Vescovo et al. 2025 ESSD)
 #
 # Outputs:
-#   * R/outputs/raw/nepal_raw.rds
-#   * R/outputs/raw/turkiye_raw.rds
-#   * R/outputs/raw/japan_raw.rds
+#   * R/data/outputs/raw/nepal_raw.rds
+#   * R/data/outputs/raw/turkiye_raw.rds
+#   * R/data/outputs/raw/japan_raw.rds
 #
 # Notes:
 #   - This script does NOT clean or harmonise.
@@ -33,11 +33,11 @@ suppressPackageStartupMessages({
 # TODO: replace with your local paths or read from a config.yaml.
 cfg <- list(
   paths = list(
-    nepal   = "~/Documents/Claude/Projects/Damage Data Publication/R/inputs/Nepal.xlsx",
-    turkiye = "~/Documents/Claude/Projects/Damage Data Publication/R/inputs/turkey.csv",
-    japan   = "~/Documents/Claude/Projects/Damage Data Publication/R/inputs/japan.gpkg"
+    nepal   = "~/Documents/Claude/Projects/Damage Data Publication/R/data/inputs/Nepal.xlsx",
+    turkiye = "~/Documents/Claude/Projects/Damage Data Publication/R/data/inputs/turkey.csv",
+    japan   = "~/Documents/Claude/Projects/Damage Data Publication/R/data/inputs/japan.gpkg"
   ),
-  out_dir = "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/raw"
+  out_dir = "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/raw"
 )
 
 dir.create(cfg$out_dir, recursive = TRUE, showWarnings = FALSE)

@@ -33,7 +33,7 @@
 #       of the predictor, separately by country. Provides model-free
 #       evidence for the opposing-relationship interpretation.
 #
-# Outputs (under R/outputs/diagnostics/):
+# Outputs (under R/data/outputs/diagnostics/):
 #   * rc_only_transfer.csv
 #   * f2_transfer.csv
 #   * transfer_bootstrap_cis.csv
@@ -49,10 +49,10 @@ suppressPackageStartupMessages({
   library(ranger)
 })
 
-source("~/Documents/Claude/Projects/Damage Data Publication/R/04_country_specific_models.R", local = TRUE)
+source("~/Documents/Claude/Projects/Damage Data Publication/R/code/04_country_specific_models.R", local = TRUE)
 
-feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/features"
-out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/diagnostics"
+feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/features"
+out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/diagnostics"
 fig_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/paper/figures"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 

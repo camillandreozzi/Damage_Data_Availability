@@ -140,10 +140,10 @@ the paper describes; keep it in the manuscript.
 ## Re-run order after patches
 
 ```r
-source("R/04_country_specific_models.R")  # nnet 5-class fixed; ranger hardened
-source("R/05_cross_country_transfer.R")   # uses fit_and_evaluate; benefits from guard
-source("R/06_overlap_ablation.R")         # explicit small-data guard added
-source("R/08_figures_tables.R")           # diagonal cells now in transfer matrix
+source("R/code/04_country_specific_models.R")  # nnet 5-class fixed; ranger hardened
+source("R/code/05_cross_country_transfer.R")   # uses fit_and_evaluate; benefits from guard
+source("R/code/06_overlap_ablation.R")         # explicit small-data guard added
+source("R/code/08_figures_tables.R")           # diagonal cells now in transfer matrix
 ```
 
 `07_simulation_study.R` does not need to be re-run — its results are

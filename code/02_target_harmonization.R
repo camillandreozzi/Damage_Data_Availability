@@ -9,16 +9,16 @@
 # where y5 ∈ {1..5} (NA where not defined) and y2 ∈ {0,1}.
 #
 # Outputs:
-#   * R/outputs/targets/<country>_targets.rds
-#   * R/outputs/targets/label_audit.csv
+#   * R/data/outputs/targets/<country>_targets.rds
+#   * R/data/outputs/targets/label_audit.csv
 # =====================================================================
 
 suppressPackageStartupMessages({
   library(tidyverse)
 })
 
-raw_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/raw"
-out_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/targets"
+raw_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/raw"
+out_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/targets"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 nepal   <- readRDS(file.path(raw_dir, "nepal_raw.rds"))$data

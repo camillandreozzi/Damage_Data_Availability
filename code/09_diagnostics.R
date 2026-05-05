@@ -24,7 +24,7 @@
 #   5. Confusion matrices and class-wise F1 for the within-country
 #      and pooled models.
 #
-# Outputs (under R/outputs/diagnostics/):
+# Outputs (under R/data/outputs/diagnostics/):
 #   * grouped_cv_nepal.csv
 #   * partial_dependence_long.rds
 #   * coefficient_sign_table.csv
@@ -45,11 +45,11 @@ suppressPackageStartupMessages({
   library(caret)
 })
 
-source("~/Documents/Claude/Projects/Damage Data Publication/R/04_country_specific_models.R", local = TRUE)
+source("~/Documents/Claude/Projects/Damage Data Publication/R/code/04_country_specific_models.R", local = TRUE)
 
-feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/features"
-res_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/results"
-out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/diagnostics"
+feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/features"
+res_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/results"
+out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/diagnostics"
 fig_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/paper/figures"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)

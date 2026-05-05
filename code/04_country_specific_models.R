@@ -12,7 +12,7 @@
 #   * Neural Network                    (nnet)
 #
 # Outputs:
-#   * R/outputs/results/within_country_long.rds
+#   * R/data/outputs/results/within_country_long.rds
 #       columns: train_domain, test_domain, feature_set, model, task,
 #                metric, value, split_id
 # =====================================================================
@@ -26,8 +26,8 @@ suppressPackageStartupMessages({
   library(MASS)
 })
 
-feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/features"
-out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/outputs/results"
+feat_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/features"
+out_dir  <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/results"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 set.seed(202604)
