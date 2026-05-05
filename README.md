@@ -41,25 +41,33 @@ Key results from the manuscript:
 
 The below-random cross-country AUCs are not treated as a coding failure. They are the central diagnostic result: forcing different post-disaster datasets into a small common feature space can invert or weaken the relationship between predictors and observed damage.
 
-## Repository structure
+## Repository Structure
 
 ```text
 .
-├── inputs/                         # Raw input data files; not necessarily versioned
-├── outputs/                        # Generated intermediate and final results
-├── 00_load_raw_data.R              # Load raw Nepal, Türkiye and Japan files
-├── 01_build_metadata_dictionary.R  # Build source-variable dictionary and compatibility metadata
-├── 02_target_harmonization.R       # Harmonise five-class and binary damage targets
-├── 03_feature_harmonization.R      # Build F1, F2, F3 and J1 feature sets
-├── 04_country_specific_models.R    # Within-country benchmarks and modelling helpers
-├── 05_cross_country_transfer.R     # Nepal–Türkiye transfer and pooled-holdout experiments
-├── 06_overlap_ablation.R           # Predictor-overlap ablation experiments
-├── 07_simulation_study.R           # Controlled compatibility-regime simulation
-├── 08_figures_tables.R             # Paper figures and tables
-├── 09_diagnostics.R                # Confusion matrices, calibration and PDP diagnostics
-├── 10_subgroup_robustness.R        # Additional subgroup and robustness checks
-└── DIAGNOSIS.md                    # Notes on debugging and patched modelling issues
+├── README.md                       # Repository overview and usage notes
+├── .gitignore                      # Ignore macOS metadata and local clutter
+├── code/                           # R analysis scripts
+│   ├── 00_load_raw_data.R          # Load raw Nepal, Türkiye and Japan files
+│   ├── 01_build_metadata_dictionary.R
+│   │                                # Build source-variable dictionary and compatibility metadata
+│   ├── 02_target_harmonization.R   # Harmonise five-class and binary damage targets
+│   ├── 03_feature_harmonization.R  # Build F1, F2, F3 and J1 feature sets
+│   ├── 04_country_specific_models.R
+│   │                                # Within-country benchmarks and modelling helpers
+│   ├── 05_cross_country_transfer.R # Nepal–Türkiye transfer and pooled-holdout experiments
+│   ├── 06_overlap_ablation.R       # Predictor-overlap ablation experiments
+│   ├── 07_simulation_study.R       # Controlled compatibility-regime simulation
+│   ├── 08_figures_tables.R         # Paper figures and tables
+│   ├── 09_diagnostics.R            # Confusion matrices, calibration and PDP diagnostics
+│   └── 10_subgroup_robustness.R    # Additional subgroup and robustness checks
+├── data/
+│   ├── inputs/                     # Raw input data files
+│   └── outputs/                    # Generated intermediate and final results
+└── docs/
+    └── DIAGNOSIS.md                # Notes on debugging and patched modelling issues
 ```
+
 
 ## Feature sets
 
