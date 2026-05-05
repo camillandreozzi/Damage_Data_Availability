@@ -24,9 +24,9 @@ suppressPackageStartupMessages({
   library(viridis)
 })
 
-res_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/results"
-sim_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/sim"
-meta_dir <- "~/Documents/Claude/Projects/Damage Data Publication/R/data/outputs/metadata"
+res_dir <- "~/Documents/Claude/Projects/Damage_Data_Availability/data/outputs/results"
+sim_dir <- "~/Documents/Claude/Projects/Damage_Data_Availability/data/outputs/sim"
+meta_dir <- "~/Documents/Claude/Projects/Damage_Data_Availability/data/outputs/metadata"
 fig_dir <- "~/Documents/Claude/Projects/Damage Data Publication/paper/figures"
 tab_dir <- "~/Documents/Claude/Projects/Damage Data Publication/paper/tables"
 dir.create(fig_dir, recursive = TRUE, showWarnings = FALSE)
@@ -56,40 +56,48 @@ ggsave(file.path(fig_dir, "fig01_compatibility_heatmap.pdf"), p1,
        width = 7, height = 6)
 
 # =====================================================================
-# Figure 2: nested pooled harmonised feature sets
+# Figure 2: pooled and within-country feature sets
 # =====================================================================
-# Figure 2 should only show the cross-country pooled feature hierarchy.
-# F3 is an extension of F2; within-country feature-rich sets are not part
-# of this nested pooled sequence and should not be shown here.
+# F1 and F2 are pooled Nepal+Türkiye harmonised feature sets.
+# F3_NPL and F3_TUR are the country-specific, within-country feature-rich
+# specifications. These should not be labelled F4.
 
 nested <- tibble(
-  set = factor(c("F1", "F2", "F3"),
-               levels = c("F1", "F2", "F3")),
-  n_predictors = c(5, 6, 8),
-  scope = "Nepal + Türkiye pooled",
+  set = factor(
+    c("F1", "F2", "F3_NPL", "F3_TUR"),
+    levels = c("F1", "F2", "F3_NPL", "F3_TUR")
+  ),
+  n_predictors = c(5, 6, 22, 18),
+  scope = c(
+    "Pooled Nepal+Türkiye",
+    "Pooled Nepal+Türkiye",
+    "Nepal within-country",
+    "Türkiye within-country"
+  ),
   description = c(
     "Minimal shared core",
-    "F1 + additional harmonised predictors",
-    "F2 + broader harmonised predictors"
+    "Expanded pooled harmonised set",
+    "Nepal feature-rich within-country set",
+    "Türkiye feature-rich within-country set"
   )
 )
 
-p2 <- ggplot(nested, aes(n_predictors, set)) +
-  geom_col(fill = "grey45", width = 0.65) +
+p2 <- ggplot(nested, aes(n_predictors, set, fill = scope)) +
+  geom_col(width = 0.65) +
   geom_text(aes(label = n_predictors), hjust = -0.25, size = 3.5) +
-  geom_text(aes(label = description), hjust = 1.05, color = "white", size = 3.2) +
-  coord_cartesian(xlim = c(0, max(nested$n_predictors) + 1.5)) +
+  coord_cartesian(xlim = c(0, max(nested$n_predictors) + 3)) +
+  scale_fill_viridis_d(option = "D") +
   theme_minimal(base_size = 11) +
   labs(
-    x = "Cumulative number of predictors",
-    y = "Pooled feature set",
-    title = "Nested pooled harmonised feature sets",
-    subtitle = "F3 extends F2; within-country feature-rich models are reported separately"
+    x = "Number of predictors",
+    y = "Feature set",
+    fill = "Specification",
+    title = "Pooled and within-country feature sets",
+    #subtitle = "F1–F2 are pooled harmonised sets; F3_NPL and F3_TUR are within-country feature-rich specifications"
   )
 
 ggsave(file.path(fig_dir, "fig02_nested_feature_sets.pdf"), p2,
        width = 7, height = 4)
-
 # =====================================================================
 # Figure 3: train -> test transfer heatmap (binary AUC, RF)
 # =====================================================================
