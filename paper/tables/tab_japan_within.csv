@@ -1,0 +1,4 @@
+model,spec,auc_mean,auc_sd
+Logistic,Full (dist + footprint + MMI + overlays),0.6432598760702111,9.765544637681131e-4
+Random Forest,F0 (distance only),0.6610864829014429,0.004140430563320229
+Random Forest,Full (dist + footprint + MMI + overlays),0.8142078699214823,0.003931261695753653

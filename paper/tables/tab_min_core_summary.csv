@@ -1,0 +1,8 @@
+family,contents
+Identifier + geolocation,"asset_id, lat, lon, footprint polygon"
+Hazard intensity,"PGA, PGV, SA(T1=1s), MMI"
+Geometry,"year built, no_storeys, total_height_m, floor_area_m2"
+Structural-system descriptor,GED4ALL category
+Site condition,v_s30 or NEHRP/Eurocode site class
+Damage label,EMS-98 grade + binary severity flag
+Collection-protocol metadata,"survey_type, inspection_date, verification_status"
